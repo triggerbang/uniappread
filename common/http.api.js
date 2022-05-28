@@ -11,12 +11,22 @@ const install = (Vue, vm) => {
     //认证相关的
     let authLogin = params => vm.$u.post('/api/auth/login',params);//登录
 	 let authRegister = params => vm.$u.post('/api/auth/register',params);//注册
-	
+	let  authLogout = (params = {}) => vm.$u.post('/api/auth/logout',params);//退出登录
+	let  authOssToken= (params = {}) => vm.$u.get('/api/auth/oss/token',params);//获取OSStoken
     //用户相关的
     let userInfo = (params = {}) => vm.$u.get('/api/user',params);//用户详情
-	
+	let userInfoUpdate = params  => vm.$u.put('/api/user',params);//修改用户信息
+	let uploadUserAvatar = (params = {}) => vm.$u.post("/api/user/avatar", params); //更新用户头像
     // 将各个定义的接口名称，统一放进对象挂载到vm.$u.api(因为vm就是this，也即this.$u.api)下
-    vm.$u.api = {index,authLogin,userInfo};
+    vm.$u.api = {
+	index,
+	authLogin,
+	authRegister,
+	authLogout,
+	authOssToken,
+	userInfo,
+	userInfoUpdate,
+	uploadUserAvatar};
 };
 
 export default {
