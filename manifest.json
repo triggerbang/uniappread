@@ -62,7 +62,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "wxc256e348c4032ebd",
+        "appid" : "wx4c7177486405e341",
         "setting" : {
             "urlCheck" : false
         },
@@ -81,6 +81,7 @@
         "template" : "template.h5.html",
         "router" : {
             "mode" : "history"
-        }
+        },
+        "title" : "图书"
     }
 }

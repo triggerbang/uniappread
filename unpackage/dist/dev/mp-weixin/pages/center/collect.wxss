@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+.container.data-v-543fe3ae {
+  padding: 20rpx;
+}
+.container .productBox.data-v-543fe3ae {
+  width: 100%;
+  display: flex;
+  margin: 20rpx 0;
+  border-radius: 10rpx;
+  border: 1px solid #eee;
+  background: #fafafa;
+  border-radius: 10rpx;
+  border: 1px solid #999;
+  justify-content: space-around;
+}
+.container .productBox .headPic.data-v-543fe3ae {
+  display: flex;
+  width: 200rpx;
+  justify-content: center;
+  align-items: center;
+}
+.container .productBox .headPic image.data-v-543fe3ae {
+  width: 160rpx;
+  height: 180rpx;
+}
+.container .productBox .proInfo.data-v-543fe3ae {
+  width: 400rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.container .productBox .proInfo .title .mainTitle.data-v-543fe3ae {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.container .productBox .proInfo .title .subTitle.data-v-543fe3ae {
+  font-size: 20rpx;
+}
+.container .productBox .proInfo .options.data-v-543fe3ae {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .productBox .proInfo .options .price.data-v-543fe3ae {
+  width: 100rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #ac1d33;
+}
+.container .productBox .proInfo .options .icon-shoucang.data-v-543fe3ae {
+  font-size: 38rpx;
+  color: #c3c300;
+}
+

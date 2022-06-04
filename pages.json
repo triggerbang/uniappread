@@ -1,4 +1,4 @@
-{
+{   "miniprogramRoot": "./APP.vue",
 	"easycom": {
 		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
 	},
@@ -61,24 +61,6 @@
             
         }
         ,{
-            "path" : "pages/goods/show",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/goods/comment/comment",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
             "path" : "pages/goods/comment",
             "style" :                                                                                    
             {
@@ -88,7 +70,7 @@
             
         }
         ,{
-            "path" : "pages/goods/detail/detail",
+            "path" : "pages/goods/detail",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
@@ -97,7 +79,52 @@
             
         }
         ,{
-            "path" : "pages/goods/detail",
+            "path" : "pages/cart/order",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/cart/payment",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/center/address",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/center/collect",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/center/addSite",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/center/myOrder",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",

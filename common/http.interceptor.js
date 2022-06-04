@@ -63,15 +63,15 @@ const install = (Vue, vm) => {
             return false;
         }
     };
-    //增加patch请求
-    vm.$u.patch = (url,params ={}) =>{
-        //模拟patch请求
-        const _params = {
-            ...params,
-            _methods: 'PATCH'
-        };
-        return vm.$u.get(url, _params);
+  // 手动挂载patch请求
+  vm.$u.patch = (url, params = {}, header = {}) => {
+    // 利用post请求模拟patch请求
+    const _params = {
+      ...params,
+      _method: "PATCH",
     };
+    return vm.$u.post(url, _params, header);
+  };
 };
 
 export default {

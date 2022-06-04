@@ -5,9 +5,9 @@
  <u-tabs :list="sortList" bar-width="100" item-width="160" :current="current" @change="changeSort"></u-tabs>
  </view>
  <u-row gutter="16" class="u-skeleton">
- 			<u-col span="6" v-for="(item,index) in goods.length !== 0 ? goods:[{},{},{},{}]">
+ 			<u-col span="6" v-for="(book,index) in goods">
       <!--使用组件-->
-        <goods-card :item="item"></goods-card>
+        <goods-card :book="book"></goods-card>
  			</u-col>
  			<u-col >
  				<view ></view>
@@ -32,7 +32,7 @@
         ],
       	current: 0,
         slides:[],
-        goods:[],
+        goods:[{},{},{},{}],
         page:1,
         loading:false
 		}
@@ -54,7 +54,7 @@
     changeSort(index){
       this.current = index;
       //重置商品数据和分页
-      this.goods = []
+      this.goods = [{},{},{},{}]
       this.page = 1
    
     this.getData()
@@ -72,7 +72,7 @@
       const  res = await this.$u.api.index(params)
       this.loading = false
         this.slides = res.slides
-        this.goods = [...this.goods,...res.goods.data]
+        this.goods = this.goods.pop().title?[...this.goods,...res.goods.data]:res.goods.data
         
     }
     },
