@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "购物车",
-  "enablePullDownRefresh": false,
-  "usingComponents": {
-    "u-checkbox": "/uview-ui/components/u-checkbox/u-checkbox",
-    "u-button": "/uview-ui/components/u-button/u-button"
-  }
-}

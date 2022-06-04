@@ -1,6 +1,6 @@
 {
     "name" : "uView-demo",
-    "appid" : "__UNI__DE5C136",
+    "appid" : "__UNI__9A73298",
     "description" : "",
     "versionName" : "1.5.0",
     "versionCode" : "100",
@@ -82,6 +82,11 @@
         "router" : {
             "mode" : "history"
         },
-        "title" : "图书"
+        "title" : "uniappread",
+        "optimization" : {
+            "treeShaking" : {
+                "enable" : false
+            }
+        }
     }
 }
